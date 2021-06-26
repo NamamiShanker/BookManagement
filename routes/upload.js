@@ -20,7 +20,7 @@ var upload = multer({dest: 'uploads/'})
  * /upload:
  *   post:
  *     tags: [Upload CSV file]
- *     summary: Upload CSV file with title, authors, isbn fields. Authorization header required.
+ *     summary: Upload CSV file with title, authors, isbn fields. Fields will be the same as Book API. View test.csv in git repo for example. Authorization header required.
  *     responses:
  *       200:
  *         description: A list of books.
