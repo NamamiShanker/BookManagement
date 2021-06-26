@@ -14,7 +14,7 @@ const Schema = mongoose.Schema;
  *         name:
  *           type: string
  *           description: The user's name
- *         emal:
+ *         email:
  *           type: string
  *           description: The user's email. Must be unique
  *       example:
