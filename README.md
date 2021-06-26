@@ -14,3 +14,4 @@ Created by: [Namami Shanker](https://github.com/NamamiShanker)
 4. `npm start`
 
 ### View hosted site - [Heroku Deployment](https://kalpas-hiring-test.herokuapp.com/)
+### View API docs - [Documentation](https://kalpas-hiring-test.herokuapp.com/api-docs/)
