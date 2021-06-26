@@ -6,7 +6,7 @@ var verifyUser = require('../services/auth')
   * @swagger
   * tags:
   *   name: Books
-  *   description: CRUD API on book collection. Authentication required.
+  *   description: CRUD API on book collection. Authorization header required.
   */
 const Book = require('../models/Book');
 
