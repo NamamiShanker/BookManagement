@@ -31,6 +31,8 @@ var upload = multer({dest: 'uploads/'})
  *               items:
  *                 $ref: '#/components/schemas/Book'
  */
+
+// Parse csv file with 'title', 'authors', and 'isbn' fields. Create Book objects and inserts them into MongoDB database.
 router.post('/', verifyUser, upload.single('csvfile'), (req, res) => {
 	if(req.user){
 		if(req.file){
