@@ -18,6 +18,9 @@ module.exports = {
     },
     servers: [
       {
+        url: "https://kalpas-hiring-test.herokuapp.com/api-docs/"
+      },
+      {
         url: `http://${process.env.IP_ADDRESS}:${process.env.PORT}`,
       },
     ],
