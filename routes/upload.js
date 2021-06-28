@@ -41,7 +41,19 @@ router.post('/', verifyUser, upload.single('csvfile'), (req, res) => {
 				Book.insertMany(jsonObj).then(books=>{
 					res.statusCode=200;
 					res.json(books);
+				}).catch(error=>{
+					res.statusCode=500;
+					res.json({
+						success: false,
+						error: error
+					})
 				});
+			}).cath(error=>{
+				res.statusCode=400;
+				res.json({
+					success: false,
+					error: error
+				})
 			})
 		}
 		else{
